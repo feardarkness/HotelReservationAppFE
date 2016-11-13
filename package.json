@@ -9,7 +9,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "postinstall": "typing install",
+    "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,7 +18,7 @@
   "devDependencies": {
     "lite-server": "^2.2.2",
     "typescript": "^2.0.9",
-    "typings": "^2.0.0",
+    "typings": "^2.0.0"
   },
   "dependencies": {
     "@angular/common": "^2.1.2",
