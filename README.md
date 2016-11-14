@@ -16,3 +16,7 @@ $ npm install
 ```
 $ npm start
 ```
+
+## Links interesantes para angular2
+
+[Buenas Prácticas](https://angular.io/docs/ts/latest/guide/style-guide.html#!#application-structure)
