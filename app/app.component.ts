@@ -2,6 +2,7 @@
  * Created by fear on 13-11-16.
  */
 import {Component} from '@angular/core';
+import {User} from './components/shared/models/user';
 
 @Component({
     selector: 'my-app',
@@ -74,7 +75,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent{
     message = 'Hello';
-    users = [
+    users: User[] = [
         {
             id: 123,
             name: 'Ariel Alvarado'
@@ -84,7 +85,7 @@ export class AppComponent{
             name: 'Coneja Loca'
         }
     ];
-    activeUser;
+    activeUser: User;
 
     selectUser(user){
         this.activeUser = user;
