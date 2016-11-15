@@ -16,3 +16,4 @@ export class Habitacion{
     observacion: string;
     características: Caracteristicas[];
 }
+
