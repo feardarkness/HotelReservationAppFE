@@ -5,10 +5,10 @@
 Angular2
 
 ## Instalando dependencias
- 
+
 ```
-$ npm install -g typings
-$ npm install -g concurrently
+$ sudo npm install -g typings
+$ sudo npm install -g concurrently
 $ npm install
 ```
 
