@@ -19,6 +19,12 @@ $ npm install
 $ npm start
 ```
 
+## Remember
+
+1. [] data flows into it
+2. () data flows out of it
+
+
 ## Links interesantes para angular2
 
 [Buenas Prácticas](https://angular.io/docs/ts/latest/guide/style-guide.html#!#application-structure)
