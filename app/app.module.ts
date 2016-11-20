@@ -10,17 +10,25 @@ import {UserFormComponent} from './users/user-form.component';
 import {ContactComponent} from './contact/contact.component';
 import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
+import {appRouting} from "./app.routing";
+import {NotFoundComponent} from "./error-pages/not-found.component";
+
 
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        appRouting
+    ],
     declarations: [
         AppComponent,
         UserProfileComponent,
         UserFormComponent,
         ContactComponent,
         HomeComponent,
-        AboutComponent
+        AboutComponent,
+        NotFoundComponent
     ],
     bootstrap: [AppComponent]
 })
