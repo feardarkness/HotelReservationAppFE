@@ -27,4 +27,11 @@ export class AppComponent{
         this.activeUser = user;
         console.log(this.activeUser);
     }
+
+    onUserCreated(event){
+        // should be auto-generated after inserting to the database
+        event.user.id = Math.floor(Math.random() * 1000);
+        this.users.push(event.user);
+        console.log(event);
+    }
 }
