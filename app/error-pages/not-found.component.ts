@@ -17,7 +17,7 @@ import {Component} from "@angular/core";
         
     `,
     styles: [
-        ''
+        ""
     ]
 })
 

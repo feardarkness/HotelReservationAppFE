@@ -7,6 +7,7 @@
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
     "lite": "lite-server",
     "tsc": "tsc",
+    "tslint": "node_modules/.bin/tslint app/**/*.ts",
     "tsc:w": "tsc -w",
     "typings": "typings",
     "postinstall": "typings install",
@@ -20,7 +21,8 @@
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
-    "typescript": "^2.0.3"
+    "tslint": "^4.0.1",
+    "typescript": "^2.0.10"
   },
   "dependencies": {
     "@angular/common": "~2.1.1",

@@ -1,13 +1,13 @@
 /**
  * Created by fear on 17-11-16.
  */
-import {Component, Output, EventEmitter} from '@angular/core';
-import {User} from '../shared/models/user';
+import {Component, Output, EventEmitter} from "@angular/core";
+import {User} from "../shared/models/user";
 import {FormGroup} from "@angular/forms";
 
 @Component({
-    selector: 'user-form',
-    templateUrl: './app/users/user-form.component.html',
+    selector: "user-form",
+    templateUrl: "./app/users/user-form.component.html",
     styles: [
         // esto solamente se aplica al form del componente user-form gracias al shadow dom!!!!!
         `form {
@@ -18,7 +18,7 @@ import {FormGroup} from "@angular/forms";
     ]
 })
 
-export class UserFormComponent{
+export class UserFormComponent {
     newUser: User = new User();
     active: boolean = true;
     @Output() userCreated = new EventEmitter();
