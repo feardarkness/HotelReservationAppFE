@@ -19,6 +19,13 @@ $ npm install
 $ npm start
 ```
 
+## Some rules
+
+1. Antes de realizar algún push al repositorio, verificar que no existan problemas con el linter de typescript, si el siguiente comando devolviera alguna linea, es necesario corregir dicho error.:
+    ```
+    $ npm run tslint
+    ```
+
 ## Remember
 
 1. [] data flows into it
