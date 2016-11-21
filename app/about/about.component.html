@@ -1,1 +1,14 @@
-<h1>About page</h1>
+<div class="row">
+    <h1>About page</h1>
+    
+    <div *ngIf="users" >
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" *ngFor="let user of users; let i = index;">
+            <div class="profile-card">
+                <p><strong>{{user.name}}</strong></p>
+                <p><a [routerLink]="['/about/', user.username]">{{user.username}}</a></p>
+                <img src="{{user.avatar}}" class="img-responsive img-circle" />
+            </div>
+        </div>
+    </div>
+</div>
+

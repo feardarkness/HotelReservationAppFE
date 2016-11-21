@@ -1,9 +1,6 @@
 /**
  * Created by fear on 20-11-16.
  */
-/**
- * Created by fear on 20-11-16.
- */
 import {Component} from "@angular/core";
 
 @Component({

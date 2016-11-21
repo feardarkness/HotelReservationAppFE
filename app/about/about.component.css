@@ -1,0 +1,12 @@
+.profile-card {
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.profile-card img {
+    max-width: 50%;
+    margin: 0 auto;
+}

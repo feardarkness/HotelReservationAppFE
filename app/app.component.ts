@@ -14,11 +14,13 @@ export class AppComponent{
     users: User[] = [
         {
             id: 123,
-            name: 'Ariel Alvarado'
+            name: 'Ariel Alvarado',
+            username: 'ariel1'
         },
         {
             id: 456,
-            name: 'Coneja Loca'
+            name: 'Coneja Loca',
+            username: 'wiiiii'
         }
     ];
     activeUser: User;
