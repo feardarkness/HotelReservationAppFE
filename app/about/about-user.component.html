@@ -1,5 +1,9 @@
-<div class="row">
+<a (click)="goBack()" class="btn btn-sm btn-info">Go Back</a>
+<div class="row" id="user-profile">
     <h1>About User page</h1>
-    <p>More info about the user</p>
+    <!--p>{{user | json}}</p-->
+    <p *ngIf="user"><strong>Nombre:</strong> {{user.name}}</p>
+    <p *ngIf="user"><strong>Usuario:</strong> {{user.username}}</p>
+    <img *ngIf="user"src="{{user.avatar}}">
 </div>
 

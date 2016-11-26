@@ -15,11 +15,16 @@ import {AboutUserComponent} from "./about/about-user.component";
 Las rutas se buscan en orden!!!!, ** es un comodín
 */
 const appRoutes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'about/:username', component: AboutUserComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: '**', component: NotFoundComponent}
+    // redireccion
+    {
+        path: "",
+        redirectTo: "/about",
+        pathMatch: "full"
+    },
+    {path: "about", component: AboutComponent},
+    {path: "about/:username", component: AboutUserComponent},
+    {path: "contact", component: ContactComponent},
+    {path: "**", component: NotFoundComponent}
 ];
 
 export const appRouting: ModuleWithProviders= RouterModule.forRoot(appRoutes);
