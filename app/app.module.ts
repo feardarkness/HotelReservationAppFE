@@ -10,17 +10,18 @@ import {UserProfileComponent} from "./users/user-profile.component";
 import {UserFormComponent} from "./users/user-form.component";
 import {ContactComponent} from "./contact/contact.component";
 import {HomeComponent} from "./home/home.component";
-import {AboutComponent} from "./about/about.component";
 import {NotFoundComponent} from "./error-pages/not-found.component";
-import {AboutUserComponent} from "./about/about-user.component";
 import {UserService} from "./shared/services/user.service";
-
+import {AboutModule} from "./about/about.module";
+import {HabitacionModule} from "./habitacion/habitacion.module";
 
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
+        AboutModule,
+        HabitacionModule,
         appRouting
     ],
     declarations: [
@@ -29,9 +30,7 @@ import {UserService} from "./shared/services/user.service";
         UserFormComponent,
         ContactComponent,
         HomeComponent,
-        AboutComponent,
-        NotFoundComponent,
-        AboutUserComponent
+        NotFoundComponent
     ],
     bootstrap: [AppComponent],
     providers: [UserService]
