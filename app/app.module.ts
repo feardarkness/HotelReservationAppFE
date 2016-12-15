@@ -19,7 +19,7 @@ import {HabitacionModule} from "./habitacion/habitacion.module";
 @NgModule({
     imports: [
         BrowserModule,
-        FormsModule,
+        FormsModule,    // add two way data binding
         AboutModule,
         HabitacionModule,
         appRouting

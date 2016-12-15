@@ -5,10 +5,12 @@ import {NgModule} from "@angular/core";
 import {habitacionRouting} from "./habitacion.routing";
 import {CommonModule} from "@angular/common";
 import {HabitacionComponent} from "./habitacion.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
     imports: [
         CommonModule,
+        FormsModule,
         habitacionRouting,
     ],
     declarations: [
@@ -19,5 +21,10 @@ import {HabitacionComponent} from "./habitacion.component";
 })
 
 export class HabitacionModule {
+
+    constructor (
+
+    ) {}
+
 
 }
