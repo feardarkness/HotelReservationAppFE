@@ -131,6 +131,14 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          "jquery",
+          {
+            "name": "bootstrap",
+            "path": "../node_modules/bootstrap-sass/assets/javascripts",
+            "main": "bootstrap",
+            "deps": ["jquery"],
+            "exports": "$"
           }
         ]
       }
