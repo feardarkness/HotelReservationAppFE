@@ -1,10 +1,6 @@
-import {bindable} from 'aurelia-framework';
+import {bindable, bindingMode} from 'aurelia-framework';
 
 export class BootstrapInput {
-  @bindable value;
-
-  valueChanged(newValue, oldValue) {
-
-  }
+  @bindable({ defaultBindingMode: bindingMode.twoWay }) texto;
 }
 

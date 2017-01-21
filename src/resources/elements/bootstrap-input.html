@@ -1,3 +1,10 @@
 <template>
-  <h1>${value}</h1>
+  <div class="form-group">
+    <label for="test-input" class="control-label">Texto</label>
+    <input type="text" class="form-control" id="test-input"
+         value.bind="texto" placeholder="Prueba de cambio de título desde input text">
+  </div>
+  <div class="row">
+    <h2>${texto}</h2>
+  </div>
 </template>
