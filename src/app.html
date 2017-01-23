@@ -5,7 +5,8 @@
     <div class="row">
       <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2
                   col-xs-8 col-sm-8 col-md-8 col-lg-8">
-        <bootstrap-input texto.bind="message"></bootstrap-input>
+        <bootstrap-input texto.bind="message"
+                   if.bind="nombres ==='mostrar'? true: false"></bootstrap-input>
       </div>
     </div>
     <div class="row">
@@ -18,7 +19,8 @@
           <div class="form-group row">
             <label for="nombres" class="col-sm-2 control-label">Nombres</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nombres" placeholder="Nombres">
+              <input type="text" class="form-control" id="nombres"
+                     placeholder="Nombres" value.bind="nombres">
             </div>
           </div>
 
