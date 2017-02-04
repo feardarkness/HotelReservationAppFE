@@ -2,6 +2,42 @@
   <require from="./assets/main.css"></require>
   <require from="./resources/elements/bootstrap-input"></require>
   <div class="container">
+
+    <div class="row">
+      <!-- Imprime la suma de 10 y 15, o sea 25 -->
+      <p>${ 10 + 15 }</p>
+
+      <!-- Imprime 50-->
+      <p>${ 5 * 10 }</p>
+
+      <!-- Imprime la cadena 'Soy una cadena' -->
+      <p>${ 'Soy una cadena' }</p>
+
+      <!-- Imprime el valor de la variable message del ViewModel -->
+      <p>${ message }</p>
+    </div>
+    <br /><br /><br /><br />
+<div>
+  <ul>
+    <li repeat.for="framework of listaDeFrameworks"
+        style="${$odd? 'background-color:yellow' : 'background-color: cyan'}">
+      ${$index}. ${framework}
+      <span if.bind="$first"> - Primer elemento</span>
+      <span if.bind="$last"> - Último elemento</span>
+    </li>
+  </ul>
+</div>
+    <br /><br /><br /><br /><br />
+    <div class="col-sm-10" style.bind="campoNombre.value">
+      <input type="text" id="nombre" name="nombre" ref="campoNombre">
+      <p if.bind="campoNombre.value === 'mostrar'">${campoNombre.value}</p>
+      <input type="text" id="nombre1" name="nombre1"
+              focus.trigger="handleEvent($event)"
+              keypress.delegate="handleEvent($event)"
+              blur.trigger="handleEvent($event)">
+      <p>${evento}</p>
+    </div>
+
     <div class="row">
       <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2
                   col-xs-8 col-sm-8 col-md-8 col-lg-8">
@@ -9,6 +45,7 @@
                    if.bind="nombres ==='mostrar'? true: false"></bootstrap-input>
       </div>
     </div>
+
     <div class="row">
       <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3
               col-lg-offset-3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
